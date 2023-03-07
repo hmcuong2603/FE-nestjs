@@ -1,0 +1,130 @@
+.user-table {
+    position: relative;
+    width: 97%;
+    height: 80%;
+    margin-top: 5%;
+    white-space: nowrap;
+    /* overflow: scroll;
+    scroll-snap-type: y mandatory; */
+}
+
+.tr-action {
+    height: 36px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.tr {
+    margin: 0 31px 0 15px;
+}
+
+
+.table-view {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: 89%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.title-view {
+    color: white;
+}
+
+.table-view::-webkit-scrollbar {
+    width: 10px;
+}
+
+.table-view::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.table-view::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(-45deg, #6a5af9, #d66efd);
+    border-radius: 50px;
+}
+
+
+.table-row-table {
+    color: #ffff;
+    width: 80%;
+    height: 61px;
+    margin-left: 15%;
+    padding: 0;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-table {
+    display: flex;
+    align-items: center;
+}
+
+.col-2 {
+    width: 150px;
+    margin-left: -60px;
+}
+
+.table-header-user-table {
+    height: 6%;
+    padding: 14px 23px;
+}
+
+.btn-table {
+    display: flex;
+    margin-top: 16px;
+    height: 31px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+.btn-edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-edit:hover {
+    cursor: pointer;
+    background-color: #0062cc;
+}
+
+.btn-delete {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    border: none;
+    outline: none;
+    background-color: #dc3545;
+    border-radius: 5px;
+}
+
+.btn-delete:hover {
+    background-color: #d44950;
+}
+
+@media(min-width: 950px) and (max-width: 1280px) {
+    .user-table {
+        width: 48%;
+    }
+
+    .no-user {
+        left: 10%;
+        position: absolute;
+    }
+}
