@@ -3,11 +3,11 @@ import './MyLogin.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { loginUser } from '../../Store/apiRequest';
-const MyLogin = () => {
-
+export default function MyLogin() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const handleEmailChange = (event) => {
@@ -16,7 +16,6 @@ const MyLogin = () => {
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
     }
-
     const handleSubmit = async (event) => {
         event.preventDefault();
         const newUser = {
@@ -60,5 +59,3 @@ const MyLogin = () => {
         </>
     );
 }
-
-export default MyLogin;

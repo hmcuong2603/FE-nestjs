@@ -257,15 +257,49 @@ body {
 }
 
 /* reponsive  */
-@media(min-width: 900px) and (max-width: 1440px) {
+
+
+
+@media(min-width: 1024px) and (max-width: 1336px) {
+    .container-home {
+        height: 70vh;
+    }
+
+    .container-home .home-title {
+        top: 12%;
+    }
+
+    .home-child {
+        top: 22%;
+    }
+
+    .container-home button {
+        top: 30%;
+    }
+
+    .container-home img {
+        top: 35%;
+    }
+}
+
+@media(min-width: 1112px) and (max-width: 1335px) {
+    .container-home {
+        height: 85vh;
+    }
+
     .home-right-two {
-        height: 82%;
+        height: 85%;
     }
 
     .container-tab-home-three {
-        height: 65vh;
+        height: 56vh;
+    }
 
-        grid-template-rows: repeat(3, 12rem);
+    .contact-footer {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 }
 
@@ -289,23 +323,31 @@ body {
     }
 
     .container-home .home-title {
-        top: 16%;
+        top: 14%;
+    }
+
+    .home-child span {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .container-home img {
+        margin-top: 50px;
     }
 }
 
-@media(min-width: 800px) and (max-width: 1280px) {
+@media(min-width: 900px) and (max-width: 1440px) {
     .home-right-two {
-        height: 79%;
+        height: 82%;
     }
 
     .container-tab-home-three {
-        grid-template-rows: repeat(3, 11rem);
-    }
+        height: 65vh;
 
-    .item-image5 button {
-        display: none;
+        grid-template-rows: repeat(3, 12rem);
     }
 }
+
 
 @media(min-width: 834px) and (max-width: 1112px) {
     .container-home {
@@ -337,24 +379,152 @@ body {
     }
 }
 
-@media(min-width: 1024px) and (max-width: 1336px) {
-    .container-home {
+@media(min-width: 800px) and (max-width: 1280px) {
+    .home-right-two {
+        height: 79%;
+    }
+
+    .container-tab-home-three {
+        grid-template-rows: repeat(3, 11rem);
+    }
+
+    .item-image5 button {
+        display: none;
+    }
+}
+
+@media(min-width: 750px) and (max-width: 1110px) {
+    .container-home img {
+        width: 58%;
+        height: 36%;
+    }
+
+    .container-page-home-two {
+        height: 54vh;
+    }
+
+    .home-left-two button {
+        bottom: 20%;
+    }
+
+    .home-right-two {
+        height: 89%;
+    }
+
+    .container-tab-home-three {
+        height: 61vh;
+        background-color: #f6f6fc;
+        grid-template-rows: repeat(3, 12rem);
+        padding: 0;
+    }
+
+    .container-tab-home-three .item-image5 {
+        font-size: 27px;
+    }
+
+    .item-image5 p {
+        font-size: 17px;
+    }
+
+    .item-image5 button {
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+
+    .contact-footer {
+        padding-left: 39px;
+        gap: 0;
+    }
+}
+
+@media(min-width: 703px) and (max-width: 745px) {
+    .container-page-home-two {
+        height: 53vh;
+    }
+
+    .home-right-two {
+        height: 89%;
+    }
+
+    .home-left-two button {
+        bottom: 19%;
+    }
+
+    .container-tab-home-three {
         height: 70vh;
+        grid-template-rows: repeat(3, 13rem);
+        padding: 8px 0px;
     }
 
-    .container-home .home-title {
-        top: 12%;
+    .item-image5 p {
+        font-size: 16px;
     }
 
-    .home-child {
-        top: 22%;
+    .item-image5 button {
+        color: #ffffff;
+        font-size: 14px;
+        padding: 10px 10px;
     }
 
-    .container-home button {
-        top: 30%;
+    .contact-footer {
+        gap: 0;
+        margin-left: 20px;
+    }
+
+    .contact-child {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 500px) and (max-width: 702px) {
+    .container-home {
+        height: 95vh;
     }
 
     .container-home img {
-        top: 35%;
+        width: 62%;
+    }
+
+    .container-page-home-two {
+        height: 55vh;
+    }
+
+    .home-right-two {
+        height: 90%;
+    }
+
+    .home-left-two button {
+        padding: 10px 13px;
+        bottom: 20%;
+    }
+
+    .home-child span {
+        margin: 0 20px;
+        font-size: 18px;
+    }
+
+    .user-log {
+        right: 2%;
+    }
+
+    .container-tab-home-three {
+        height: 60vh;
+        grid-template-rows: repeat(3, 12rem);
+        padding: 8px 0px;
+    }
+
+    .container-tab-home-three .item-image5 {
+        font-size: 25px;
+    }
+
+    .item-image5 p {
+        font-size: 16px;
+    }
+
+    .item-image5 button {
+        font-size: 14px;
+        padding: 10px 9px;
     }
 }

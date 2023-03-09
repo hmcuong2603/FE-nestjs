@@ -2,52 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 const myListSlice = createSlice({
     name: 'myList',
     initialState: {
-        // allMyList: [
-        //     {
-        //         id: 1,
-        //         name: 'Nam',
-        //         title: '. Life is like a coin. You can spend it anyway you wish, but you only spend it once. – Lillian Dickson.',
-        //         username: 'Lê Quang',
-        //         email: 'hmlm@gmail1.com',
-        //         image: 'https://randomuser.me/api/portraits/men/20.jpg',
-        //         address: ' 198 West 21th Street, Suite 721 New York NY 10016',
-        //         phone: ' 1235 2355 98',
-        //         website: 'Website yoursite.com'
-        //     },
-        //     {
-        //         id: 2,
-        //         name: 'Tú',
-        //         title: 'Today is hard, tomorrow will be worse but the day after tomorrow will be sunshine. – Jack Ma',
-        //         username: 'Nguyễn Minh',
-        //         email: 'hmlm2@gmail.com',
-        //         image: 'https://randomuser.me/api/portraits/women/8.jpg',
-        //         address: ' 198 West 21th Street, Suite 721 New York NY 10016',
-        //         phone: ' 1235 2355 98',
-        //         website: 'Website yoursite.com'
-        //     },
-        //     {
-        //         id: 3,
-        //         name: 'Phong',
-        //         title: 'Life is like riding a bicycle. To keep your balance, you must keep moving. – Albert Einstein',
-        //         username: 'Lê Đình',
-        //         email: 'hml3@gmail.com',
-        //         image: 'https://randomuser.me/api/portraits/men/32.jpg',
-        //         address: ' 198 West 21th Street, Suite 721 New York NY 10016',
-        //         phone: ' 1235 2355 98',
-        //         website: 'Website yoursite.com'
-        //     },
-        //     {
-        //         id: 4,
-        //         name: 'Nhung',
-        //         title: 'Life is like riding a bicycle. To keep your balance, you must keep moving. – Albert Einstein',
-        //         username: 'Đặng Thị',
-        //         email: 'hml3@gmail.com',
-        //         image: 'https://randomuser.me/api/portraits/women/2.jpg',
-        //         address: ' 198 West 21th Street, Suite 721 New York NY 10016',
-        //         phone: ' 1235 2355 98',
-        //         website: 'Website yoursite.com'
-        //     }
-        // ]
         login: {
             currentUser: null,
             isFetching: false,

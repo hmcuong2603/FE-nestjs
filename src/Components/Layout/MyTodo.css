@@ -15,7 +15,7 @@
     height: 55%;
     display: flex;
     align-items: center;
-    margin-left: 15%;
+    margin-left: 17%;
     transform: translateY(36%);
     overflow-x: hidden;
 
@@ -232,7 +232,6 @@
     height: 250px;
     border-radius: 5px;
     background-image: url(../access/bgk.jpg);
-
 }
 
 .modal .modal-input {
@@ -346,42 +345,6 @@
 }
 
 
-@media(min-width: 834px) and (max-width: 1112px) {
-    .container .home-add {
-        height: 80%;
-        transform: translateY(20%);
-    }
-
-    .flex-large h2 {
-        margin-left: 30%;
-    }
-
-    .flex-row {
-        display: flex;
-        margin-left: 100px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container .flex-large1 {
-        margin-left: -14%;
-        width: 87%;
-        margin-top: -73%;
-    }
-
-    .flex-row .flex-large {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 78%;
-        height: 50%;
-    }
-
-    .user-table {
-        position: static;
-    }
-}
-
 @media(min-width: 1024px) and (max-width: 1336px) {
     .container .flex-large1 {
         height: 38%;
@@ -406,5 +369,56 @@
         margin-left: 0;
         width: 75%;
         height: 34%;
+    }
+}
+
+@media(min-width: 1112px) and (max-width: 1335px) {
+    .flex-row .flex-large {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5%;
+    }
+
+    .modal {
+        position: absolute;
+        top: 70%;
+    }
+}
+
+@media(min-width: 750px) and (max-width: 1110px) {
+    .container .home-add {
+        width: 90%;
+        height: 55%;
+        margin-left: 5%;
+    }
+
+
+    .flex-large h2 {
+        margin-left: 4%;
+    }
+
+    .flex-row {
+        display: flex;
+        margin-left: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .flex-large1 {
+        margin-left: -14%;
+        width: 87%;
+        margin-top: -73%;
+    }
+
+    .flex-row .flex-large {
+        position: absolute;
+        left: 43%;
+        transform: translateX(-50%);
+        width: 78%;
+        height: 75%;
+        top: 15%;
+
     }
 }

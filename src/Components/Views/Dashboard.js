@@ -4,10 +4,10 @@ import { useSelector } from 'react-redux';
 export default function Dashboard(props) {
     const user = useSelector((state) => state.myListReducer.login.currentUser)
     useEffect(() => {
-        localStorage.getItem('dataLogin');
+        JSON.parse(window.localStorage.getItem('dataLogin'));
     }, [])
-    const data = localStorage.getItem('dataLogin');
-    console.log(data);
+    const data = JSON.parse(window.localStorage.getItem('dataLogin'));
+    // console.log(data);
     return (
         <div className='container-dashboard'>
 

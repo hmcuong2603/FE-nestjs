@@ -4,6 +4,8 @@ import './Menu.css';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
+import { useGoogleLogin } from 'react-use-googlelogin'
+
 const RADIO_ITEMS = ['Andy', 'Benoît', 'Luis'];
 const Menu = () => {
     const [radioSelection, setRadioSelection] = React.useState(RADIO_ITEMS[2]);
@@ -18,6 +20,7 @@ const Menu = () => {
         JSON.parse(window.localStorage.getItem('dataLogin'));
     }, [])
     const data = JSON.parse(window.localStorage.getItem('dataLogin'));
+
     return (
         <Menubar.Root className="MenubarRoot">
             {user || data ? (

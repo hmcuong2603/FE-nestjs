@@ -4,10 +4,11 @@ import { createNewFailed, createNewStart, createNewSuccess, loginFailed, loginSt
 import { getAllUserFailed, getAllUserStart, getAllUserSuccess } from "./userSlice";
 
 export const loginUser = async (user, dispatch, navigate) => {
+    const loginGoogle = localStorage.getItem('dataLogin');
     dispatch(loginStart());
     try {
         const res = await axios.post('http://localhost:3030/users/login', user);
-        dispatch(loginSuccess(res.data))
+        dispatch(loginSuccess(res.data, loginGoogle))
         navigate('/')
         localStorage.setItem('isLoggedIn', 'true');
         localStorage.setItem('dataLogin', JSON.stringify(res.data));
