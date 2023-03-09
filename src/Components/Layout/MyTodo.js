@@ -10,7 +10,6 @@ import './MyTodo.css';
 import { useDispatch } from 'react-redux';
 import { createNewUser } from '../../Store/apiRequest';
 export default function MyTodo() {
-
     //getAllUser from database
     const [users, setUsers] = useState([]);
     useEffect(() => {
@@ -18,6 +17,7 @@ export default function MyTodo() {
             setUsers(response.data)
         })
     }, [])
+
     //EDIT
     const [editing, setEditing] = useState(false)
     const initialFormState = { id: null, name: '', username: '' }
@@ -58,10 +58,6 @@ export default function MyTodo() {
         }
 
     }
-
-
-
-
     const [formData, setFormData] = useState({
         id: Math.floor(Math.random() * 999) + 1,
         email: '',
@@ -83,9 +79,9 @@ export default function MyTodo() {
             password: '',
             name: '',
             username: ''
-        })
+        });
+        setUsers([...users, formData])
     }
-
     const [open, setOpen] = useState(false)
     const handleOpen = () => {
         setOpen(true)
@@ -110,7 +106,8 @@ export default function MyTodo() {
                                 setEditing={setEditing}
                                 currentUser={currentUser}
                                 updateUser={updateUser}
-                            /></>
+                            />
+                        </>
                     ) : (
                         <div className="flex-large">
                             <h2 className='title-view'>View Users</h2>

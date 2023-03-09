@@ -30,7 +30,7 @@ export default function MyLogin() {
                 <div className='content-login'>
                     <h1 className='wlc'>Log In</h1>
                     <h3 className='wlc-b'>login here using your email and password</h3>
-                    <form className="form-tab-register" onSubmit={handleSubmit}>
+                    <form className="form-tab-register tab-login" onSubmit={handleSubmit}>
                         <div className="Fieldset">
                             <label className="Label" htmlFor="email">Email:</label>
                             <input className="Input" type="email" name="email" value={email} onChange={handleEmailChange} required />

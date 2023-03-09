@@ -140,3 +140,23 @@ input {
     font-weight: 600;
     color: rgb(240, 18, 18);
 }
+
+@media(min-width: 850px) and (max-width: 1110px) {
+    .content-login .wlc {
+        top: 19%;
+    }
+
+    .container-login .wlc-b {
+        top: 26%;
+    }
+
+    .tab-login {
+        top: 57%;
+    }
+}
+
+@media(min-width: 400px) and (max-width: 650px) {
+    .container-login .wlc-b {
+        width: 323px;
+    }
+}

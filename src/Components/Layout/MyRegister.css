@@ -202,14 +202,26 @@
 
 @media(min-width: 950px) and (max-width: 1280px) {
     .tab-register {
-        width: 85%;
+        width: 100%;
     }
 }
 
 @media(min-width: 834px) and (max-width: 1112px) {
+    .content-login .wlc {
+        top: 22%;
+    }
+
+    .container-login .wlc-b {
+        top: 28%;
+    }
+
+    .rg {
+        top: 17%;
+    }
+
     .tab-register {
-        width: 83%;
-        height: 64%;
+        width: 100%;
+        height: 100%;
     }
 
     .title-h5 {
@@ -223,10 +235,40 @@
 
     .form-tab-register {
         width: 77%;
-        top: 50%;
+        top: 58%;
         transform: translateY(-44%);
         left: 8%;
         height: 58%;
         padding: 28px;
+    }
+
+    .content-login .rg-fg {
+        top: 47%;
+    }
+
+    .or-singin {
+        bottom: 33%;
+    }
+
+    .face {
+        bottom: 19%;
+    }
+
+    .sing-or {
+        height: 27px;
+    }
+}
+
+@media(min-width: 400px) and (max-width: 750px) {
+    .rg {
+        font-size: 25px;
+        width: 254px;
+    }
+
+    .forgot-psw {
+        position: absolute;
+        font-size: 15px;
+        bottom: 25%;
+        right: 33%;
     }
 }

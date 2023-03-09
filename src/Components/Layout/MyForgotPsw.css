@@ -184,56 +184,53 @@
     line-height: 2;
 }
 
-@media(min-width: 900px) and (max-width: 1440px) {
-    .content-icon-forgot img {
-        transform: translateY(-50px);
+
+
+@media(min-width: 1030px) and (max-width: 1280px) {
+    .container-forgot input {
+        position: relative;
+        margin-top: 60%;
     }
 
-    .content-note {
-        bottom: 0;
+    .content-icon-forgot .err-email {
+        bottom: 25%;
+        right: 13%;
     }
-}
 
-@media(min-width: 950px) and (max-width: 1280px) {
     .content-icon-forgot {
         width: 40%;
         height: 42%;
-        margin-top: 13%;
-    }
-
-    .content-icon-forgot img {
-        width: 30%;
-    }
-
-    .content-icon-forgot span {
-        font-size: 14px;
-        width: 84%;
-    }
-}
-
-@media(min-width: 800px) and (max-width: 1280px) {
-    .content-icon-forgot {
-        width: 35%;
-        height: 42%;
-        margin-top: 12%;
+        margin-top: 15%;
     }
 
     .content-icon-forgot .title-forgot {
         font-size: 25px;
+        top: 10%;
+    }
+
+    .content-icon-forgot span {
+        position: absolute;
+        margin-top: 43%;
     }
 
     .container-forgot button {
-        bottom: 15%;
+        bottom: 11%;
         font-size: 15px;
         position: absolute;
     }
+
 
     .content-icon-forgot p {
         margin-left: 10%;
     }
 
     .your-logo img {
+        margin-bottom: 50px;
         width: 15%;
+    }
+
+    .content-network {
+        bottom: 22%;
     }
 
     .content-network i {
@@ -242,52 +239,88 @@
     }
 
     .content-note {
-        bottom: 0;
+        bottom: 5%;
     }
 }
 
-@media(min-width: 834px) and (max-width: 1112px) {
+@media(min-width: 730px) and (max-width: 1025px) {
     .content-icon-forgot {
-        width: 75%;
-        margin-top: 20%;
-    }
-
-    .content-icon-forgot .title-forgot {
-        font-size: 38px;
+        width: 473px;
+        height: 403px;
+        margin-top: 22%;
     }
 
     .content-icon-forgot span {
-        font-size: 17px;
+        font-size: 15px;
+        margin-left: 7%;
+        margin-top: 34%;
     }
 
     .container-forgot input {
-        width: 50%;
-        font-size: 20px;
+        margin-top: 52%;
     }
 
-    .container-forgot button {
-        bottom: 18%;
-        font-size: 25px;
+    .content-icon-forgot button {
+        bottom: 49px;
+        font-size: 18px;
+    }
+
+    .content-icon-forgot .err-email {
+        bottom: 26%;
+        right: 23%;
+    }
+}
+
+@media(min-width: 450px) and (max-width: 725px) {
+    .content-icon-forgot {
+        width: 447px;
+        height: 375px;
+        margin-top: 29%;
+    }
+
+    .content-icon-forgot img {
+        width: 176px;
+        margin-left: 26%;
+        transform: translateY(-44px);
+    }
+
+    .content-icon-forgot .title-forgot {
+        font-size: 22px;
+        margin-left: 25%;
+        margin-top: 21%;
+    }
+
+    .content-icon-forgot span {
+        font-size: 13px;
+    }
+
+    .content-icon-forgot .err-email {
+        bottom: 38%;
+        right: 16%;
+        font-size: 17px;
+    }
+
+    .content-icon-forgot button {
+        bottom: 104px;
+        font-size: 15px;
+        border-radius: 24px;
+        padding: 7px 10px;
     }
 
     .content-icon-forgot p {
-        font-size: 18px;
-        margin-left: 14%;
+        margin-left: 10%;
+        bottom: 17px;
     }
 
     .your-logo img {
-        width: 30%;
+        bottom: 36%;
     }
 
     .content-network {
-        margin-top: 7%;
-    }
-
-    .content-network i {
-        font-size: 45px;
+        bottom: 24%;
     }
 
     .content-note {
-        bottom: 15px;
+        bottom: 37px;
     }
 }

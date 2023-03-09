@@ -20,6 +20,32 @@
     margin: 0 31px 0 15px;
 }
 
+.filter-input {
+    position: absolute;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    padding: 7px 0px 7px 5px;
+    border: 1px solid white;
+    z-index: 10;
+    right: 5%;
+    top: -15%;
+}
+
+.filter-input:focus {
+    border: 1px solid #d44950;
+}
+
+.filter-input::placeholder {
+    color: #b8b0b0;
+}
+
+.no-user {
+    position: absolute;
+    left: 10%;
+    color: #fff;
+    font-size: 17px;
+}
 
 .table-view {
     display: flex;

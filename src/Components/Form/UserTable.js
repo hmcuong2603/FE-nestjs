@@ -1,13 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useEffect } from 'react';
 import './UserTable.css'
 const UserTable = (props) => {
+    const USERS = props.users
+    // the value of the search field 
+    const [name, setName] = useState('');
+    // the search result
+    const [foundUsers, setFoundUsers] = useState(USERS);
+
+    //SEARCH
+    const filter = (e) => {
+        const keyword = e.target.value;
+        if (keyword !== '') {
+            const results = USERS.filter((user) => {
+                return user.name.toLowerCase().startsWith(keyword.toLowerCase());
+            });
+            setFoundUsers(results);
+        } else {
+            setFoundUsers(USERS);
+        }
+        (setName)(keyword);
+    };
+    useEffect(() => {
+        setFoundUsers(USERS)
+    }, [USERS])
+
+
+
     return (
         <table className='user-table'>
-
+            <input
+                type="search"
+                value={name}
+                onChange={filter}
+                className="filter-input"
+                placeholder="Search"
+            />
             <tbody className='table-view'>
-                {props.users.length > 0 ?
+                {foundUsers.length > 0 ?
                     (
-                        props.users.map((user, index) => (
+                        foundUsers.map((user, index) => (
                             <li key={user.id} className="table-row-table">
                                 <div className="col col-1 col-table" >{index + 1}</div>
                                 <div className="col col-2 col-table">{user.username}</div>
@@ -30,7 +62,7 @@ const UserTable = (props) => {
                     :
                     (
                         <tr>
-                            <td className='no-user' colSpan={3}>No users</td>
+                            <td className='no-user' colSpan={3}>User not found !!</td>
                         </tr>
                     )
                 }

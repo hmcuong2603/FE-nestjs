@@ -396,7 +396,7 @@
 
 
     .flex-large h2 {
-        margin-left: 4%;
+        margin-left: -2%;
     }
 
     .flex-row {
@@ -420,5 +420,9 @@
         height: 75%;
         top: 15%;
 
+    }
+
+    .filter-input {
+        right: -1% !important;
     }
 }

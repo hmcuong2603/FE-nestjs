@@ -388,6 +388,10 @@ body {
         grid-template-rows: repeat(3, 11rem);
     }
 
+    .container-home button {
+        top: 37%;
+    }
+
     .item-image5 button {
         display: none;
     }

@@ -38,5 +38,3 @@ export default function MyInfo() {
 
     )
 }
-
-//src={`https://randomuser.me/api/portraits/men/${Math.floor(Math.random() * 100) + 1}.jpg`} random image
