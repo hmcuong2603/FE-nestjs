@@ -38,10 +38,10 @@ export default function TabInfo() {
                             <div className='item-info'>
                                 <span>{user.email}</span>
                             </div>
-                            <label>Title</label>
+                            <label>Roles</label>
                             <div className='item-info'>
-                                <textarea disabled value={user.title}>
-                                    {user.title}
+                                <textarea disabled value={user.roles}>
+                                    {user.roles}
                                 </textarea>
                             </div>
                         </div>

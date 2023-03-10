@@ -24,50 +24,94 @@ const Menu = () => {
         <Menubar.Root className="MenubarRoot">
             {user || data ? (
                 <>
-                    <div className="nav-menu">
-                        <Menubar.Menu>
-                            <Menubar.Trigger className="MenubarTrigger">
-                                <Link className="item" to="/">
-                                    Home
+                    {data.roles === "admin" ? (
+                        <>
+                            <div className="nav-menu">
+                                <Menubar.Menu>
+                                    <Menubar.Trigger className="MenubarTrigger">
+                                        <Link className="item" to="/">
+                                            Home
+                                        </Link>
+                                    </Menubar.Trigger>
+                                </Menubar.Menu>
+
+                                <Menubar.Menu>
+                                    <Menubar.Trigger className="MenubarTrigger">
+                                        <Link className="item" to="/mytodo">
+                                            AppTodo
+                                        </Link>
+                                    </Menubar.Trigger>
+                                </Menubar.Menu>
+
+                                <Menubar.Menu>
+                                    <Menubar.Trigger className="MenubarTrigger">
+                                        <Link className="item" to="/profile">
+                                            Profile
+                                        </Link>
+                                    </Menubar.Trigger>
+                                </Menubar.Menu>
+
+                                <Menubar.Menu>
+                                    <Menubar.Trigger className="MenubarTrigger">
+                                        <Link className="item btn-login" to="/dashboard">
+                                            Mydashboard
+                                        </Link>
+                                    </Menubar.Trigger>
+                                </Menubar.Menu>
+
+
+                            </div>
+                            <div className='user-log'>
+                                <div className='hi-name'>
+                                    {user ? <p>Hi <span>{user.name}</span></p> : <p>Hi <span>{data.name}</span></p>}
+                                </div>
+
+                                <Link onClick={handleLogout} className="item logout-item">
+                                    LogOut
                                 </Link>
-                            </Menubar.Trigger>
-                        </Menubar.Menu>
+                            </div>
+                        </>
+                    ) : (
+                        <>
+                            <div className="nav-menu">
+                                <Menubar.Menu>
+                                    <Menubar.Trigger className="MenubarTrigger">
+                                        <Link className="item" to="/">
+                                            Home
+                                        </Link>
+                                    </Menubar.Trigger>
+                                </Menubar.Menu>
 
-                        <Menubar.Menu>
-                            <Menubar.Trigger className="MenubarTrigger">
-                                <Link className="item" to="/mytodo">
-                                    AppTodo
+                                <Menubar.Menu>
+                                    <Menubar.Trigger className="MenubarTrigger">
+                                        <Link className="item" to="/profile">
+                                            Profile
+                                        </Link>
+                                    </Menubar.Trigger>
+                                </Menubar.Menu>
+
+                                <Menubar.Menu>
+                                    <Menubar.Trigger className="MenubarTrigger">
+                                        <Link className="item btn-login" to="/dashboard">
+                                            Mydashboard
+                                        </Link>
+                                    </Menubar.Trigger>
+                                </Menubar.Menu>
+
+
+                            </div>
+                            <div className='user-log'>
+                                <div className='hi-name'>
+                                    {user ? <p>Hi <span>{user.name}</span></p> : <p>Hi <span>{data.name}</span></p>}
+                                </div>
+
+                                <Link onClick={handleLogout} className="item logout-item">
+                                    LogOut
                                 </Link>
-                            </Menubar.Trigger>
-                        </Menubar.Menu>
+                            </div>
+                        </>
+                    )}
 
-                        <Menubar.Menu>
-                            <Menubar.Trigger className="MenubarTrigger">
-                                <Link className="item" to="/profile">
-                                    Profile
-                                </Link>
-                            </Menubar.Trigger>
-                        </Menubar.Menu>
-
-                        <Menubar.Menu>
-                            <Menubar.Trigger className="MenubarTrigger">
-                                <Link className="item btn-login" to="/dashboard">
-                                    Mydashboard
-                                </Link>
-                            </Menubar.Trigger>
-                        </Menubar.Menu>
-
-
-                    </div>
-                    <div className='user-log'>
-                        <div className='hi-name'>
-                            {user ? <p>Hi <span>{user.name}</span></p> : <p>Hi <span>{data.name}</span></p>}
-                        </div>
-
-                        <Link onClick={handleLogout} className="item logout-item">
-                            LogOut
-                        </Link>
-                    </div>
                 </>
             )
                 :

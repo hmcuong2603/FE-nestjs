@@ -6,7 +6,7 @@ import { loginUser } from '../../Store/apiRequest';
 export default function MyLogin() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
+    // const [error, setError] = useState('');
 
     const navigate = useNavigate();
     const dispatch = useDispatch();
@@ -40,7 +40,7 @@ export default function MyLogin() {
                             <input className="Input" type="password" name="password" autocomplete="on" value={password} onChange={handlePasswordChange} required />
                         </div>
                         <div className='err-input'>
-                            {error && <p className='err-login'>{error}</p>}
+                            {/* {error && <p className='err-login'>{error}</p>} */}
                         </div>
                         <button className=" btn-btnlogin" type="submit">Log in</button>
                         <div className='rg-fg'>

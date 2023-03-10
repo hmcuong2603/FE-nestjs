@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import './App.css';
 import Menu from './Layout/Menu';
 import { Routes, Route } from "react-router-dom";
@@ -14,9 +14,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import Dashboard from "./Views/Dashboard";
 
 function App() {
-  useEffect(() => {
-    localStorage.getItem('statusLogin');
-  }, [])
   return (
     <>
       <Menu />

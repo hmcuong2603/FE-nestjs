@@ -186,3 +186,17 @@ header {
         height: 17%;
     }
 }
+
+@media(min-width: 450px) and (max-width: 745px) {
+    .leaderboard {
+        width: 95%;
+    }
+
+    .item-info {
+        margin: 3px 5px;
+    }
+
+    .leaderboard__profile:hover {
+        transform: scale(1);
+    }
+}

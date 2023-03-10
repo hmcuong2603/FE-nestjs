@@ -210,7 +210,7 @@
     }
 
     .view-info .avt {
-        top: 76px;
+        top: 55px;
     }
 }
 
@@ -233,7 +233,7 @@
 @media(min-width: 750px) and (max-width: 1110px) {
     .info-container {
         width: 86%;
-        top: 29%;
+        top: 21%;
     }
 
     .pen-contact {
@@ -249,7 +249,7 @@
     }
 
     .container-view-info p {
-        top: 19%;
+        top: 12%;
     }
 }
 
@@ -261,10 +261,17 @@
     .info-container {
         width: 89%;
         height: 62%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .view-contact lable {
-        font-size: 25px;
+    .view-info {
+        width: 100%;
+    }
+
+    .view-contact {
+        display: none;
     }
 
     .pen-contact {

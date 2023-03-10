@@ -195,19 +195,32 @@
     }
 
     .modal {
-        top: 18%;
+        top: 72%;
         width: 551px;
     }
 
     .modal .input {
         width: 234px;
     }
+
+    .modal .contai-input {
+        top: 19%;
+    }
+
+    .contai-button {
+        bottom: 13%;
+    }
 }
 
 @media(min-width: 450px) and (max-width: 745px) {
     .container .home-add {
-        width: 82%;
-        margin-left: 9%;
+        width: 95%;
+        height: 62%;
+        margin-left: 2%;
+    }
+
+    .user-table {
+        width: 98%;
     }
 
     .table-view {
@@ -216,12 +229,22 @@
     }
 
     .table-row-table {
-        width: 84%;
-        margin-left: 4%;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .flex-row .flex-large {
+        top: 7%;
+        height: 86%;
     }
 
     .flex-large .btn-add {
+        top: -3%;
         gap: 0;
+    }
+
+    .filter-input {
+        top: -20%;
     }
 
     .col-1 {
@@ -242,13 +265,29 @@
         transform: translateX(45px);
     }
 
-    .modal {
-        width: 621px;
-        height: 223px;
-    }
-
     .modal .input {
         width: 263px;
     }
 
+    .btn-table {
+        transform: translateX(0);
+    }
+
+    .modal {
+        margin-top: 20px;
+        width: 450px;
+        height: 202px;
+    }
+
+    .modal .input {
+        width: 190px;
+    }
+
+    .modal .contai-input {
+        top: 3%;
+    }
+
+    .contai-button {
+        bottom: 5%;
+    }
 }

@@ -10,7 +10,8 @@ const MyRegister = () => {
         email: '',
         password: '',
         name: '',
-        username: ''
+        username: '',
+        roles: 'user'
     });
     const navigate = useNavigate();
     const dispatch = useDispatch();
