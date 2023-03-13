@@ -10,7 +10,7 @@ const Menu = () => {
     const [radioSelection, setRadioSelection] = React.useState(RADIO_ITEMS[2]);
     const user = useSelector((state) => state.myListReducer.login.currentUser)
     const handleLogout = async () => {
-        window.location.href = '/';
+        window.location.href = '/login';
         localStorage.removeItem('isLoggedIn')
         localStorage.removeItem('dataLogin')
         toast.info('LogOut Success !')
@@ -24,7 +24,7 @@ const Menu = () => {
         <Menubar.Root className="MenubarRoot">
             {user || data ? (
                 <>
-                    {data.roles === "admin" ? (
+                    {data.roles === "admin" || "Admin" ? (
                         <>
                             <div className="nav-menu">
                                 <Menubar.Menu>
@@ -63,7 +63,7 @@ const Menu = () => {
                             </div>
                             <div className='user-log'>
                                 <div className='hi-name'>
-                                    {user ? <p>Hi <span>{user.name}</span></p> : <p>Hi <span>{data.name}</span></p>}
+                                    {user ? <p>Hi <span>{user.name} <b>{user.roles}</b></span></p> : <p>Hi_<span>{data.name} <b>{data.roles}</b></span></p>}
                                 </div>
 
                                 <Link onClick={handleLogout} className="item logout-item">

@@ -278,7 +278,9 @@ body {
     }
 
     .container-home img {
-        top: 35%;
+        width: 45%;
+        height: 47%;
+        top: 39%;
     }
 }
 
@@ -332,7 +334,7 @@ body {
     }
 
     .container-home img {
-        margin-top: 50px;
+        margin-top: 6px;
     }
 }
 
@@ -351,13 +353,13 @@ body {
 
 @media(min-width: 834px) and (max-width: 1112px) {
     .container-home {
-        height: 80vh;
+        height: 85vh;
         margin-top: 0;
     }
 
 
     .container-home button {
-        top: 37%;
+        top: 35%;
     }
 
     .container-home img {
@@ -379,9 +381,17 @@ body {
     }
 }
 
-@media(min-width: 800px) and (max-width: 1280px) {
+@media(min-width: 750px) and (max-width: 1280px) {
     .home-right-two {
-        height: 79%;
+        height: 84%;
+    }
+
+    .home-title {
+        top: 18%;
+    }
+
+    .home-child {
+        top: 26%
     }
 
     .container-tab-home-three {
@@ -389,15 +399,16 @@ body {
     }
 
     .container-home button {
-        top: 37%;
+        top: 39%;
     }
 
 }
 
 @media(min-width: 750px) and (max-width: 1110px) {
     .container-home img {
-        width: 58%;
-        height: 36%;
+        width: 54%;
+        height: 43%;
+        top: 43%;
     }
 
     .container-page-home-two {
@@ -409,7 +420,7 @@ body {
     }
 
     .home-right-two {
-        height: 89%;
+        height: 86%;
     }
 
     .container-tab-home-three {
@@ -440,6 +451,12 @@ body {
 }
 
 @media(min-width: 703px) and (max-width: 745px) {
+    .container-home img {
+        width: 50%;
+        height: 41%;
+        top: 48%;
+    }
+
     .container-page-home-two {
         height: 53vh;
     }
@@ -505,7 +522,7 @@ body {
     }
 
     .home-right-two {
-        height: 90%;
+        height: 91%;
     }
 
     .home-left-two button {

@@ -214,7 +214,7 @@
     }
 }
 
-@media(min-width: 800px) and (max-width: 1280px) {
+@media(min-width: 790px) and (max-width: 1280px) {
     .info-container {
         height: 70%;
     }
@@ -230,7 +230,7 @@
     }
 }
 
-@media(min-width: 750px) and (max-width: 1110px) {
+@media(min-width: 790px) and (max-width: 1110px) {
     .info-container {
         width: 86%;
         top: 21%;
@@ -250,6 +250,10 @@
 
     .container-view-info p {
         top: 12%;
+    }
+
+    .view-info .avt {
+        top: 85px;
     }
 }
 
